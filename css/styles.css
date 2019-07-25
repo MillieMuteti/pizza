@@ -1,6 +1,12 @@
+body{
+    background-image: url(images/wood.jpg);
+    background-size: cover;
+}
 .first{
-    background-image: url(images/pizza.jpeg);
     text-align: center;
-    color: white;
-    padding: 40px;
+    font-family: 'Henny Penny', cursive;
+    padding: 25px;
+}
+.btn{
+    float: right;
 }
