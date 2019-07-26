@@ -10,12 +10,11 @@ body{
 .btn{
     float: right;
 }
-.card{
+.one{
     padding: 10px;
     float: right;
     background: transparent;
     color: white;
     font-family: 'Henny Penny', cursive;
-
 
 }
