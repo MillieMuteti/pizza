@@ -11,5 +11,8 @@ body{
     float: right;
 }
 .one{
-    font-family: 'Henny Penny', cursive;  
+    font-family: 'Henny Penny', cursive; 
+    background: transparent; 
+    background-color: black;
+    color: white;
 }
