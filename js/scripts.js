@@ -26,17 +26,16 @@ function Pizza(size,toppings,crust,quantity){
 
 
 //user interface logic
-$(document).ready(function(){
+$(document).ready(function(){ 
     $("#add").click(function(e){
         e.preventDefault();
         var pSize = $("#size").val();
         var pQuant = $("#quantity").val();
         var pCrust = $("#crust").val();
         var pTop = $("#toppings").val();
-
         var newOrder=new Pizza(pSize,pTop,pCrust,pQuant);
 
-        alert(newOrder);
+    
         
     });
 });
