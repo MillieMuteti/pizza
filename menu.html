@@ -1,163 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/menu.css">
-        <link href="https://fonts.googleapis.com/css?family=Henny+Penny&display=swap" rel="stylesheet">
-        
-        <title>Pazzi Per La Pizza</title>
-    </head>
-    <body>
-        <div class="container section1">
-            <div class="jumbotron first">
-                <h1>PAZZI PER LA PIZZA!</h1>
-                <p>Because we are crazy about pizza</p>
-                <p>MENU</p>
-                <p><BR></p>
-            <div class="btn">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                
-            </div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny&display=swap" rel="stylesheet">
+    <title>Pazzi Per la Pizza</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Pazzi Per La Pizza</h1>
+        <p>Because we are crazy about pizza</p>
+        <div class="btn">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
         </div>
-         <div class="container-fluid">
-             <div class="row">
-                 <div class="col-md-2">
-                     <div class="card one">
-                         <p>Pepperoni Pizza<p>
-                        <img src="css/images/pepperoni.jpeg" alt="" class="pepperoni">
-                        <p>Special chicken,italian sauce,pepperoni&tomato sauce</p>
-                        <div class="form-group">
-                            <p>Choose size</p>
-                            <label for="Size">
-                                <select name="size" id="size" class="form-control">
-                                    <option value="mega" id="mega">Mega 1200</option>
-                                    <option value="large" id="large">Large 1000</option>
-                                    <option value="Medium" id="medium">Medium 800</option>
-                                    <option value="small" id="small">Small 500</option>
-                                </select>
-                            </label>
+    </div>
+    <div class="container">
+        <div class="row scroll_y">
+            <!-- <div class="col-md-2"> -->
+                <label >
+                    <input type="radio" name="pizzaType" value="margarita" id="type">
+                  <div class="card pizza_box">
+                        <img src="css/images/margarita.jpeg" alt="" class="one">
+                    <h4 >Margarita Pizza</h4>
+                    <p>Special sauce,lots of cheese,<br>olives ,tomato,<br>,pepperoni</p>
+                  </div>
+                </label>
+            <!-- </div> -->
+            <!-- <div class="col-md-2"> -->
+                <label>
+                    <input type="radio" name="pizzaType" value="vegeterian" id="type">
+                    <div class="card pizza_box"><img src="css/images/vegeterian.jpeg" alt="" class="one">
+                    <h4>Vegeterian Pizza</h4>
+                    <p>mushroom,specialsauce,capsicum,<br>tomato,sweet corn,<br>onions,olives,cheese</p>
+                </div></label>
+            <!-- </div> -->
+            <!-- <div class="col-md-2"> -->
+                <label >
+                <input type="radio" name="pizzaType" value="tikka" id="type">
+                <div class="card pizza_box"><img src="css/images/tikka.jpeg" alt="" class="one">
+                <h4>Chicken Tikka</h4>
+                <p>special sauce,bbq chicken,<br>cheese,tomato,capsicum</p>
+                </div>
+            </label>
+            <!-- </div> -->
+            <label>
+                <input type="radio" name="pizzaType" id="type">
+                <div class="card pizza_box"><img src="css/images/tandoori.jpeg" alt="" class="one">
+                <h4>Tandoori Pizza</h4>
+                <p>Special sauce,tandoori chicken,<br>olives,cheese,masala,<br>capsicum,tomato</p>
+                </div>
+            </label>
+            <label>
+                <input type="radio" name="pizzaType" id="type">
+                <div class="card pizza_box"> <img src="css/images/sausage.jpeg" alt="" class="one">
+                <h4>Sausage Pizza</h4>
+                <p>Special sauce,tandoori,<br>lots ofcheese,sausage,<br>,capsicum</p>
+                </div>
+            </label>
+            <label >
+                <input type="radio" name="pizzaType" id="type">
+                <div class="card pizza_box"><img src="css/images/pepperoni.jpeg" alt="" class="one">
+                <h4>Pepperoni pizza</h4></div>
+            </label>
+        </div>
+        <div class="row extras">
+                <div class="form-group">
+                        <label for="Size">Choose size</label>
+                        <select name="size" id="size" class="form-control">
+                            <option value="mega">Mega 1200</option>
+                            <option value="large">Large 1000</option>
+                            <option value="Medium">Medium 800</option>
+                            <option value="small">Small 500</option>
+                        </select>
  
-                        </div>
-                        <div class="form-group">
-                            <label for="quantity">Quantity</label>
-                            <input type="number" id="quantity" class="form-control">
-                        </div>
-                        <div class="form-group">
-                                
-                                <label for="Size">Crust</label>
-                                    <select name="crust" id="crust" class="form-control">
-                                        <option value="stuffed">Stuffed 200</option>
-                                        <option value="Gluten-free">Gluten-free 250</option>
-                                        <option value="Crispy">Crispy</option>
+                    </div>
+                    <div class="form-group">
                                         
-                                    </select>
-                        </div>
-                        <div class="form-group">
-                                
-                                <label for="toppings">Toppings</label>
-                                    <select name="toppings" id="toppings" class="form-control">
-                                        <option value="none">None</option>
-                                        <option value="pepperoni">Pepperoni ksh.150</option>
-                                        <option value="Mushroom">Mushroom ksh.100</option>
-                                        <option value="Blackolives">Black Olives ksh.150</option>
-                                        <option value="Greenpeppers">Green peppers ksh 150</option>
-                                        <option value="extra cheese">Extra cheese ksh 150</option>
-                                        <option value="sausage">Sausage ksh.150</option>
-                                        <option value="onions">Onions ksh.100</option>
-                                        <option value="pineapple">Pineapple ksh.150</option>
-                                    </select>
-                        </div>
-                        <div class="button">
-                            <button type="submit" class="submit" id="add"> Add to cart</button>
-                        </div>
-                    </div>
-                </div> 
-                <!-- <div class="col-md-2"> 
-                    <div class="card two">
-                        <p>Vegetrerian Pizza<p>
-                        <img src="css/images/vegeterian.jpeg" alt="" class="vegeterian">
-                        <p>mushroom,specialsauce,capsicum,tomato,sweet corn,onions,olives,cheese</p>
-                        <div class="form-group">
-                            <p>Choose size</p>
-                            <label for="Size">
-                            <select name="size" id="size" class="form-control">
-                                <option value="mega">Mega 1200</option>
-                                <option value="large">Large 1000</option>
-                                <option value="Medium">Medium 800</option>
-                                <option value="small">Small 500</option>
-                            </select>
-                            </label>
-     
-                        </div>
-                        <div class="form-group">
-                            <label for="quantity">Quantity</label>
-                            <input type="number" id="quantity" class="form-control">
-                        </div>
-                        <div class="form-group">
-                                    
-                            <label for="Size">Crust</label>
-                            <select name="crust" id="crust" class="form-control">
-                                <option value="stuffed">Stuffed 200</option>
-                                <option value="Gluten-free">Gluten-free 250</option>
-                                <option value="Crispy">Crispy 200</option>
-                                            
-                            </select>
-                        </div>
-                        <div class="form-group">
-                                    
-                            <label for="toppings">Toppings</label>
-                            <select name="toppings" id="toppings" class="form-control">
-                                <option value="none">None</option>
-                                <option value="pepperoni">Pepperoni ksh150</option>
-                                <option value="Mushroom">Mushroom ksh.100</option>
-                                <option value="Blackolives">Black Olives 150</option>
-                                <option value="Greenpeppers">Green peppers 100</option>
-                                <option value="extra cheese">Extra cheese 150</option>
-                                <option value="sausage">Sausage 150</option>
-                                <option value="onions">Onions 100</option>
-                                <option value="pineapple">Pineapple 150</option>
-                            </select>
-                        </div>
-                        <div class="button">
-                            <button type="submit" class="submit" id="add to cart"> Add to cart</button> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card three">
-                        <p>Margarita Pizza<p>
-                        <img src="css/images/margarita.jpeg" alt="" class="margarita">
-                        <p>Special sauce,lots of cheese, olives ,tomato,onions,pepperoni</p>
-                        <div class="form-group">
-                            <p>Choose size</p>
-                            <label for="Size">
-                            <select name="size" id="size" class="form-control">
-                                <option value="mega">Mega 1200</option>
-                                <option value="large">Large 1000</option>
-                                <option value="Medium">Medium 800</option>
-                                <option value="small">Small 500</option>
-                            </select>
-                            </label>
-     
-                        </div>
-                        <div class="form-group">
-                            <label for="quantity">Quantity</label>
-                            <input type="number" id="quantity" class="form-control">
-                        </div>
-                        <div class="form-group">
-                                    
-                            <label for="Size">Crust</label>
-                            <select name="crust" id="crust" class="form-control">
-                                <option value="stuffed">Stuffed 200</option>
-                                <option value="Gluten-free">Gluten-free 250</option>
-                                <option value="Crispy">Crispy 200</option>
-                                            
-                            </select>
-                        </div>
-                        <div class="form-group">
-                                    
                             <label for="toppings">Toppings</label>
                             <select name="toppings" id="toppings" class="form-control">
                                 <option value="none">None</option>
@@ -171,84 +93,7 @@
                                 <option value="pineapple">Pineapple 150</option>
                             </select>
                         </div>
-                        <div class="button">
-                            <button type="submit" class="submit" id="add to cart"> Add to cart</button>
-                        </div>    
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card four">
-                        <p>Tandoori Pizza<p>
-                        <img src="css/images/tandoori.jpeg" alt="" class="tandoori">
-                        <p>Special sauce,tandoori chicken,olives,cheese,masala,capsicum,tomato</p>
                         <div class="form-group">
-                            <p>Choose size</p>
-                            <label for="Size">
-                            <select name="size" id="size" class="form-control">
-                                <option value="mega">Mega 1200</option>
-                                <option value="large">Large 1000</option>
-                                <option value="Medium">Medium 800</option>
-                                <option value="small">Small 500</option>
-                            </select>
-                            </label>
-     
-                        </div>
-                        <div class="form-group">
-                            <label for="quantity">Quantity</label>
-                            <input type="number" id="quantity" class="form-control">
-                        </div>
-                        <div class="form-group">
-                                    
-                            <label for="Size">Crust</label>
-                            <select name="crust" id="crust" class="form-control">
-                                <option value="stuffed">Stuffed 200</option>
-                                <option value="Gluten-free">Gluten-free 250</option>
-                                <option value="Crispy">Crispy 200</option>
-                                            
-                            </select>
-                        </div>
-                        <div class="form-group">
-                                    
-                            <label for="toppings">Toppings</label>
-                            <select name="toppings" id="toppings" class="form-control">
-                                <option value="none">None</option>
-                                <option value="pepperoni">Pepperoni 150</option>
-                                <option value="Mushroom">Mushroom 100</option>
-                                <option value="Blackolives">Black Olives 150</option>
-                                <option value="Greenpeppers">Green peppers 100</option>
-                                <option value="extra cheese">Extra cheese 150</option>
-                                <option value="sausage">Sausage 150</option>
-                                <option value="onions">Onions 100</option>
-                                <option value="pineapple">Pineapple 150</option>
-                            </select>
-                        </div>
-                        <div class="button">
-                            <button type="submit" class="submit" id="add to cart"> Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                    <div class="col-md-2">
-                        <div class="card five">
-                            <p>Sausage Pizza<p>
-                            <img src="css/images/sausage.jpeg" alt="" class="sausage">
-                            <p>Special sauce,tandoori,lots ofcheese,sausage,mushrooom,capsicum</p>
-                            <div class="form-group">
-                                <p>Choose size</p>
-                                <label for="Size">
-                                <select name="size" id="size" class="form-control">
-                                    <option value="mega">Mega 1200</option>
-                                    <option value="large">Large 1000</option>
-                                    <option value="Medium">Medium 800</option>
-                                    <option value="small">Small 500</option>
-                                </select>
-                                </label>
-         
-                            </div>
-                            <div class="form-group">
-                                <label for="quantity">Quantity</label>
-                                <input type="number" id="quantity" class="form-control">
-                            </div>
-                            <div class="form-group">
                                         
                                 <label for="Size">Crust</label>
                                 <select name="crust" id="crust" class="form-control">
@@ -257,81 +102,20 @@
                                     <option value="Crispy">Crispy 200</option>
                                                 
                                 </select>
-                            </div>
+                            </div> 
                             <div class="form-group">
-                                        
-                                <label for="toppings">Toppings</label>
-                                <select name="toppings" id="toppings" class="form-control">
-                                    <option value="none">None</option>
-                                    <option value="pepperoni">Pepperoni 150</option>
-                                    <option value="Mushroom">Mushroom 100</option>
-                                    <option value="Blackolives">Black Olives 150</option>
-                                    <option value="Greenpeppers">Green peppers 100</option>
-                                    <option value="extra cheese">Extra cheese 150</option>
-                                    <option value="sausage">Sausage 150</option>
-                                    <option value="onions">Onions 100</option>
-                                    <option value="pineapple">Pineapple 150</option>
-                                </select>
-                            </div>
-                            <div class="button">
-                                <button type="submit" class="submit" id="add to cart"> Add to cart</button>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card six">
-                            <p>Chicken Tikka<p>
-                            <img src="css/images/tikka.jpeg" alt="" class="tikka">
-                            <p>special sauce,bbq chicken,cheese,tomato,capsicum</p>
-                            <div class="form-group">
-                                <p>Choose size</p>
-                                <label for="Size">
-                                <select name="size" id="size" class="form-control">
-                                    <option value="mega">Mega 1200</option>
-                                    <option value="large">Large 1000</option>
-                                    <option value="Medium">Medium 800</option>
-                                    <option value="small">Small 500</option>
-                                </select>
-                                </label>
-         
-                            </div>
-                            <div class="form-group">
-                                <label for="quantity">Quantity</label>
-                                <input type="number" id="quantity" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                        
-                                <label for="Size">Crust</label>
-                                <select name="crust" id="crust" class="form-control">
-                                    <option value="stuffed">Stuffed 200</option>
-                                    <option value="Gluten-free">Gluten-free 250</option>
-                                    <option value="Crispy">Crispy 200</option>
-                                                
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                        
-                                <label for="toppings">Toppings</label>
-                                <select name="toppings" id="toppings" class="form-control">
-                                    <option value="none">None</option>
-                                    <option value="pepperoni">Pepperoni 150</option>
-                                    <option value="Mushroom">Mushroom 100</option>
-                                    <option value="Blackolives">Black Olives 150</option>
-                                    <option value="Greenpeppers">Green peppers 100</option>
-                                    <option value="extra cheese">Extra cheese 150</option>
-                                    <option value="sausage">Sausage 150</option>
-                                    <option value="onions">Onions 100</option>
-                                    <option value="pineapple">Pineapple 150</option>
-                                </select>
-                            </div>
-                            <div class="button">
-                                <button type="submit" class="submit" id="add to cart"> Add to cart</button>
-                            </div>  
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        <script src="js/jquery-3.4.1.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+                                    <label for="quantity">Quantity</label>
+                                    <input type="number" id="quantity" class="form-control" value="1">
+                                </div>
+        </div>
+<div style="display: flex; flex-direction: row">
+        <button id="add" class="btn button"> Add to cart</button>
+
+</div>
+   
+
+    </div><script src="js/jquery-3.4.1.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+
 </html>
