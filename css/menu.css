@@ -27,8 +27,8 @@ body{
 }
 
 .pizza_box{
-    min-width: 240px !important;
-    min-height: 280px !important;
+    width: 240px !important;
+    height: 300px !important;
     margin-right: 24px;
     overflow: hidden;
 }
@@ -59,3 +59,8 @@ label>input:checked ~ .pizza_box{
     margin: 0 auto;
     width: 160px;
   }
+
+.pizza_box>h4, .pizza_box>p{
+    padding-left: 8px;
+    padding-right: 8px
+}
