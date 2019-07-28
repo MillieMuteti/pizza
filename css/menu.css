@@ -90,7 +90,8 @@ label>input:checked ~ .pizza-box{
     background-color: #FFFFFF;
     float: right;
     overflow-y: scroll;
-
+    padding-left: 16px;
+    padding-right: 16px;
     /* display: none; */
     
 }
@@ -112,6 +113,21 @@ label>input:checked ~ .pizza-box{
     background-color: #000000;
     border-color: #000000;
     margin: 0 auto;
-    width: 160px;
+    width: 200px;
     float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
+.cartSum{
+    border-radius: 12px;
+    height: 24px;
+    width: 24px;
+    background-color: red;
+}
+.row{
+    justify-content: space-between;
+    font-weight: 500 !important;
+    border-top: 2px solid black;
+}  

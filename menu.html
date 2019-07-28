@@ -21,11 +21,15 @@
         <a href="menu.html">Menu</a>
       </div>
       <p><BR></p>
-      <button type="submit" id="view">View Cart</button>
+      <button type="submit" id="view" class="span view">
+          <span class="cartTotal"> </span>
+          <span class="cartSum">
+              0
+      </span>
+         <span> View Cart</span></button>
       
-      <div class="cartSum">
-      </div>
-      <span class="cartTotal"></span>
+      
+      
     </div>
     <div class="container">
       <h3 style="color: white">CHOOSE PIZZA</h3>
@@ -157,6 +161,14 @@
             <ul id="orders">
 
             </ul>
+            <div class="row">
+              <div> 
+                Total
+              </div>
+                <div class="cartTotal">
+              
+                  </div>
+            </div>
             <label for="button">
                 Click here if you wish to have your pizza delivered
                  <button id="deliver">Pizza Delivery</button>
