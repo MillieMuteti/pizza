@@ -2,13 +2,15 @@
 let cart = [];
 
 let newOrdercart = [];
+ let netPrice = 0
 
-function Pizza(size, toppings, crust, quantity, type) {
+function Pizza(size, toppings, crust, quantity, type, price) {
   this.size = size;
   this.crust = crust;
   this.toppings = toppings;
   this.quantity = quantity;
   this.type = type;
+  this.price = price;
 }
 
 //user interface logic
@@ -22,28 +24,7 @@ $(document).ready(function() {
     var pCrust = $("#crust").val();
     var pTop = $("#toppings").val();
     var pType = $("input[name=pizzaType]:checked").val();
-    var newOrder = new Pizza(pSize, pTop, pCrust, pQuant, pType);
-    cart.push(newOrder);
-    cart.map(({
-        crust,
-    quantity,
-    size,
-    toppings,
-    type
-    }) => {
-    
-      $("ul#orders").prepend(`
-      <li class="row" style="flex-wrap: nowrap">
-      <img src="css/images/${type}.jpeg" />
-      <div style="flex: 1">
-          <h5>${crust}</h5>
-          <p>Size: ${size}</p>
-          <p>Toppings: ${toppings}</p>
-          <p>Quantity: ${quantity}</p>
-      </div>
-    </li>`);
-    
-    })
+
 
     const pizzaSizes = [
       {
@@ -114,15 +95,52 @@ $(document).ready(function() {
             return results*quantity;
         }
         var grandTotal=totalPrice(results,quantity);
-        alert(grandTotal);
+        // alert(grandTotal);
+
+        var newOrder = new Pizza(pSize, pTop, pCrust, pQuant, pType, grandTotal);
+        cart.push(newOrder);
+        // $(".cartSum").html(cart);
+        // console.log(cart)
+        var yes = cart.reduce((accumulator, currentValue) => 
+            accumulator + currentValue.price, 0
+        )
+        console.log(yes)
+        $(".cartTotal").html(yes);
+
+        $(".cartSum").html(cart.length);
+
+        cart.map(({
+            crust,
+        quantity,
+        size,
+        toppings,
+        type,
+        price,
+        }) => {
+        
+          $("ul#orders").append(`
+          <li class="row" style="flex-wrap: nowrap">
+          <img src="css/images/${type}.jpeg" />
+          <div style="flex: 1">
+              <h5>${type}</h5>
+              <p>Size: ${size}</p>
+              <p>Toppings: ${toppings}</p>
+              <p>Quantity: ${quantity}</p>
+              <p>Crust: ${crust}</p>
+              <p> price${price}</p>
+          </div>
+        </li>`);
+        
+        })
   });
   $("#deliver").click(function(e){
       e.preventDefault
     var location= prompt("Please enter your location:");
+    })
 
-
-
-  })
-
-
+    $("#view").click(function(e) {
+        e.preventDefault();
+        $(".cart-wrapper").slideToggle();
+        $(".cart-container").slideDown();
+    });
 })
