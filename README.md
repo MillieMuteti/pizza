@@ -7,7 +7,8 @@ It is a website for Pazzi per la pizza, pizza joint where you can place your ord
 * A browser
 * A text editor
 * Go to the page and using the input forms make your choices and then add to cart
-
+* view cart to see your purchases
+* click delivery button if you want it to be delivered
 ## Known Bugs
 Java script has some errors
 ## Technologies Used
