@@ -116,6 +116,7 @@ $(document).ready(function() {
         toppings,
         type,
         price,
+        yes,
         }) => {
         
           $("ul#orders").append(`
@@ -128,6 +129,7 @@ $(document).ready(function() {
               <p>Quantity: ${quantity}</p>
               <p>Crust: ${crust}</p>
               <p> price${price}</p>
+              <p> GrandTotal${yes}</p>
           </div>
         </li>`);
         
@@ -139,6 +141,11 @@ $(document).ready(function() {
     })
 
     $("#view").click(function(e) {
+        e.preventDefault();
+        $(".cart-wrapper").slideToggle();
+        $(".cart-container").slideDown();
+    });
+    $("#checkout").click(function(e) {
         e.preventDefault();
         $(".cart-wrapper").slideToggle();
         $(".cart-container").slideDown();
