@@ -15,8 +15,8 @@ function Pizza(size, toppings, crust, quantity, type) {
 $(document).ready(function() {
   $("#add").click(function(e) {
     e.preventDefault();
-    $(".cart-wrapper").slideToggle();
-    $(".cart-container").slideDown();
+    // $(".cart-wrapper").slideToggle();
+    // $(".cart-container").slideDown();
     var pSize = $("#size").val();
     var pQuant = $("#quantity").val();
     var pCrust = $("#crust").val();
@@ -24,7 +24,26 @@ $(document).ready(function() {
     var pType = $("input[name=pizzaType]:checked").val();
     var newOrder = new Pizza(pSize, pTop, pCrust, pQuant, pType);
     cart.push(newOrder);
-    console.log(cart);
+    cart.map(({
+        crust,
+    quantity,
+    size,
+    toppings,
+    type
+    }) => {
+    
+      $("ul#orders").prepend(`
+      <li class="row" style="flex-wrap: nowrap">
+      <img src="css/images/${type}.jpeg" />
+      <div style="flex: 1">
+          <h5>${crust}</h5>
+          <p>Size: ${size}</p>
+          <p>Toppings: ${toppings}</p>
+          <p>Quantity: ${quantity}</p>
+      </div>
+    </li>`);
+    
+    })
 
     const pizzaSizes = [
       {
@@ -95,13 +114,15 @@ $(document).ready(function() {
             return results*quantity;
         }
         var grandTotal=totalPrice(results,quantity);
-        // alert(grandTotal);
+        alert(grandTotal);
   });
   $("#deliver").click(function(e){
       e.preventDefault
-    var location= prompt("Please enter your current location:");
+    var location= prompt("Please enter your location:");
+
+
+
   })
-  $("#deliver").click(function(e){
-      
-  });
+
+
 })
