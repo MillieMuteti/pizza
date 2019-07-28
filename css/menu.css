@@ -1,12 +1,23 @@
 body{
     background-image: url(images/wood.jpg);
     background-size: cover;
+    font-family: "Henny Penny", cursive;
+
 }
-.first{
+.jumbotron{
+    height: 150px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px;
+    font-family: "Henny Penny", cursive;
+
+}
+/* .first{
     text-align: center;
     font-family: 'Henny Penny', cursive;
     padding: 25px;
-}
+} */
 .btn{
     float: right;
 }
@@ -19,14 +30,14 @@ body{
     width: 150px;
 }
 
-.scroll_y{
+.scroll-y{
     width: 100%;
     flex-wrap: nowrap;
     overflow-x: scroll;
     align-items: center;
 }
 
-.pizza_box{
+.pizza-box{
     width: 240px !important;
     height: 300px !important;
     margin-right: 24px;
@@ -45,7 +56,7 @@ label>input:checked ~ .card{
     background-color: black !important
 }
 
-label>input:checked ~ .pizza_box{
+label>input:checked ~ .pizza-box{
     zoom: 1.1;
     color: white;
     background-color: black !important;
@@ -60,7 +71,34 @@ label>input:checked ~ .pizza_box{
     width: 160px;
   }
 
-.pizza_box>h4, .pizza_box>p{
+.pizza-box>h4, .pizza-box>p{
     padding-left: 8px;
     padding-right: 8px
+}
+.cart-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    text-decoration: none;
+}
+.cart-container{
+    height: 100vh;
+    width: 360px;
+    background-color: #FFFFFF;
+    float: right;
+    padding: 16px;
+    display: none;
+    text-decoration: none;
+}
+#deliver{ 
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    margin: 0 auto;
+    width: 160px
+
 }

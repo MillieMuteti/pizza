@@ -1,20 +1,30 @@
-body{
-    background-image: url(images/wood.jpg);
-    background-size: cover;
+body {
+  background-image: url(images/wood.jpg);
+  background-size: cover;
+  font-family: "Henny Penny", cursive;
+
 }
-.first{
-    text-align: center;
-    font-family: 'Henny Penny', cursive;
-    padding: 25px;
+.first {
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  padding: 25px;
+  color: white;
+  height: 150px;
 }
-.btn{
-    float: right;
+.btn {
+  float: right;
 }
-.one{
-    padding: 10px;
+.one {
+  padding: 10px;
+  float: right;
+  background: transparent;
+  color: white;
+  font-family: "Henny Penny", cursive;
+}
+.card{
     float: right;
     background: transparent;
-    color: white;
-    font-family: 'Henny Penny', cursive;
+    color: whitesmoke;
 
+    
 }
