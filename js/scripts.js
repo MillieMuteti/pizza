@@ -135,9 +135,10 @@ $(document).ready(function() {
         
         })
   });
+  var place;
   $("#deliver").click(function(e){
       e.preventDefault
-    var location= prompt("Please enter your location:");
+     place=prompt("Please enter your location:");
     var email=prompt("Enter your email address:")
     })
 
@@ -150,5 +151,6 @@ $(document).ready(function() {
         e.preventDefault();
         $(".cart-wrapper").slideToggle();
         $(".cart-container").slideDown();
+        alert("Your pizza will be delivered in" + place);
     });
 })
