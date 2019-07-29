@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://milliemuteti.github.io/pizza/menu.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Pazzi Per la Pizza_files/bootstrap.css">
+    <link rel="stylesheet" href="./Pazzi Per la Pizza_files/menu.css">
+    <link href="./Pazzi Per la Pizza_files/css" rel="stylesheet">
+    <title>Pazzi Per la Pizza</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Pazzi Per La Pizza</h1>
+      <p>Because we are crazy about pizza</p>
+      <div class="btn">
+        <a href="https://milliemuteti.github.io/pizza/index.html">Home</a>
+        <a href="https://milliemuteti.github.io/pizza/menu.html">Menu</a>
+      </div>
+      <p><br></p>
+      <button type="submit" id="view" class="span view">
+          <span class="cartTotal"> </span>
+          <span class="cartSum">
+              0
+      </span>
+         <span> View Cart</span></button>
+      
+      
+      
+    </div>
+    <div class="container">
+      <h3 style="color: white">CHOOSE PIZZA</h3>
+      <div class="row scroll-y">
+        <!-- <div class="col-md-2"> -->
+        <label>
+          <input type="radio" name="pizzaType" value="margarita" id="margarita">
+          <div class="card pizza-box">
+            <img src="./Pazzi Per la Pizza_files/margarita.jpeg" alt="" class="one">
+            <h4>Margarita Pizza</h4>
+            <p>
+              Special sauce,lots of cheese,<br>olives ,tomato,<br>,pepperoni
+            </p>
+          </div>
+        </label>
+        <!-- </div> -->
+        <!-- <div class="col-md-2"> -->
+        <label>
+          <input type="radio" name="pizzaType" value="vegeterian" id="vegeterian">
+          <div class="card pizza-box">
+            <img src="./Pazzi Per la Pizza_files/vegeterian.jpeg" alt="" class="one">
+            <h4>Vegeterian Pizza</h4>
+            <p>
+              mushroom,specialsauce,capsicum,<br>tomato,sweet corn,onions,olives,cheese
+            </p>
+          </div></label>
+        <!-- </div> -->
+        <!-- <div class="col-md-2"> -->
+        <label>
+          <input type="radio" name="pizzaType" value="tikka" id="tikka">
+          <div class="card pizza-box">
+            <img src="./Pazzi Per la Pizza_files/tikka.jpeg" alt="" class="one">
+            <h4>Chicken Tikka</h4>
+            <p>special sauce,bbq chicken,<br>cheese,tomato,capsicum</p>
+          </div>
+        </label>
+        <!-- </div> -->
+        <label>
+          <input type="radio" name="pizzaType" value="tandoori" id="tandoori">
+          <div class="card pizza-box">
+            <img src="./Pazzi Per la Pizza_files/tandoori.jpeg" alt="" class="one">
+            <h4>Tandoori Pizza</h4>
+            <p>
+              Special sauce,tandoori chicken,<br>olives,cheese,masala,<br>capsicum,tomato
+            </p>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="pizzaType" value="sausage" id="sausage">
+          <div class="card pizza-box">
+            <img src="./Pazzi Per la Pizza_files/sausage.jpeg" alt="" class="one">
+            <h4>Sausage Pizza</h4>
+            <p>
+              Special sauce,tandoori,<br>lots ofcheese,sausage,<br>,capsicum
+            </p>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="pizzaType" value="pepperoni" id="pepperoni">
+          <div class="card pizza-box">
+            <img src="./Pazzi Per la Pizza_files/pepperoni.jpeg" alt="" class="one">
+            <h4>Pepperoni pizza</h4>
+            <p>Pepperoni, specialsauce,tomato<br>capsicum,black olives</p>
+          </div>
+        </label>
+      </div>
+      <div class="row extras">
+        <div class="form-group">
+          <label for="Size" style="color: white">Choose size</label>
+          <select name="size" id="size" class="form-control">
+            <option value="mega">Mega 1200</option>
+            <option value="large">Large 1000</option>
+            <option value="medium">Medium 800</option>
+            <option value="small">Small 500</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="toppings" style="color: white">Toppings</label>
+          <select name="toppings" id="toppings" class="form-control">
+            <option value="none">None</option>
+            <option value="pepperoni">Pepperoni 150</option>
+            <option value="Mushroom">Mushroom 100</option>
+            <option value="Blackolives">Black Olives 150</option>
+            <option value="Greenpeppers">Green peppers 100</option>
+            <option value="extra cheese">Extra cheese 150</option>
+            <option value="sausage">Sausage 150</option>
+            <option value="onions">Onions 100</option>
+            <option value="pineapple">Pineapple 150</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Size" style="color: white">Crust</label>
+          <select name="crust" id="crust" class="form-control">
+            <option value="stuffed">Stuffed 200</option>
+            <option value="gluten-free">Gluten-free 250</option>
+            <option value="crispy">Crispy 200</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="quantity" style="color: white">Quantity</label>
+          <input type="number" id="quantity" class="form-control" value="1">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row">
+        <button id="add" class="btn button">Add to cart</button>
+      </div>
+    </div>
+
+    <div class="cart-wrapper">
+        <div class="cart-container">
+            <h2>Checkout</h2>
+            
+            <ul id="orders">
+
+            </ul>
+            <div class="row">
+              <div> 
+                Total
+              </div>
+                <div class="cartTotal">
+              
+                  </div>
+            </div>
+            <label for="button">
+                Click here if you wish to have your pizza delivered
+                 <button id="deliver">Pizza Delivery</button>
+            </label>
+
+            <button class="btn button" id="checkout">Checkout</button>
+
+        </div>
+    </div>
+
+    <script src="./Pazzi Per la Pizza_files/jquery-3.4.1.js"></script>
+    <script src="./Pazzi Per la Pizza_files/scripts.js"></script>
+  
+
+</body></html>
