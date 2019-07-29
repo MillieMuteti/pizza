@@ -138,6 +138,7 @@ $(document).ready(function() {
   $("#deliver").click(function(e){
       e.preventDefault
     var location= prompt("Please enter your location:");
+    var email=prompt("Enter your email address:")
     })
 
     $("#view").click(function(e) {
